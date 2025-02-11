@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.feed__wave {
+    display: none;
+}
+
+
+#block__desc {
+    color: rgb(0, 0, 0);
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 27px;
+    letter-spacing: 0px;
+}
+
+#block__title {
+    color: rgb(0, 0, 0);
+    font-family: Ermilov;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0px;
+}
+
+#link__text {
+    color: rgb(0, 0, 0, 0.5);
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 27px;
+    letter-spacing: 0px;
+}
+
+#button__text {
+    color: rgb(0, 0, 0);
+    font-family: Mint Spirit;
+    font-size: 23.56px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+/* HEADER */
+
+header {
+    margin-top: 39px
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: rgb(0, 0, 0);
+    font-family: Mint Spirit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    font-family: Mint Spirit;
+    font-size: 17.36px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 36px;
+    transition: all .4s ease;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+nav a:last-of-type {
+    margin-right: 0;
+}
+
+/* MAIN */
+
+main {
+    margin-top: 158px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.main-content h1 {
+    color: rgb(0, 0, 0);
+    font-family: Ermilov;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0px;
+    background: linear-gradient(-89.43deg, rgb(173, 249, 255), rgb(244, 170, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    margin-bottom: 12px;
+    width: 606px;
+    height: 38px;
+}
+
+.main-content p {
+    width: 607px;
+    height: 167px;
+    margin-bottom: 62px;
+}
+
+.main-content__button a {
+    padding: 21px 156px;
+
+    color: rgb(0, 0, 0);
+    font-family: Mint Spirit;
+    font-size: 23.56px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-decoration: none;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(40, 41, 54);
+    border-radius: 27px;
+    background: rgb(255, 255, 255);
+}
+
+.main-content img {
+    width: 683px;
+    height: 490px;
+}
