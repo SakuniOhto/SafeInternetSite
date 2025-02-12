@@ -151,16 +151,53 @@ main {
     font-size: 23.56px;
     font-weight: 700;
     line-height: 25px;
-    letter-spacing: 0px;
     text-decoration: none;
 
     box-sizing: border-box;
     border: 1px solid rgb(40, 41, 54);
     border-radius: 27px;
     background: rgb(255, 255, 255);
+    
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Важно для работы эффекта */
 }
+
+.main-content__button a::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -75px;
+    width: 50px;
+    height: 155px;
+    background:  rgb(40, 41, 54, 0.1); /* Чуть увеличил прозрачность, чтобы эффект был заметнее */
+    transform: rotate(35deg);
+    transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.main-content__button a:hover::after {
+    left: 120%;
+}
+
 
 .main-content img {
     width: 683px;
     height: 490px;
+    margin-left: -28px;
+}
+
+.square {
+    position: absolute;
+    border-radius: 30px;
+    margin-left: 73px;
+    top: 168px;
+    background: conic-gradient(from 120deg at 50% 50%,
+            #B1F9FF 0%,
+            #F3A5FF 60%,
+            #FFF7FF 80%,
+            #ADF9FF 100%);
+    opacity: 0.7;
+    z-index: -1;
+    width: 600px;
+    height: 600px;
 }
