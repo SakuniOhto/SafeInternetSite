@@ -1,4 +1,8 @@
+/* FONTS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+/* NULLIFY AND STANDARTS*/
 
 * {
     margin: 0;
@@ -24,9 +28,15 @@ body {
     display: none;
 }
 
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* FONTS BY IDS */
 
 #block__desc {
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Manrope;
     font-size: 20px;
     font-weight: 200;
@@ -35,7 +45,7 @@ body {
 }
 
 #block__title {
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Ermilov;
     font-size: 48px;
     font-weight: 700;
@@ -45,15 +55,10 @@ body {
 
 #link__text {
     color: rgb(0, 0, 0, 0.5);
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 27px;
-    letter-spacing: 0px;
 }
 
 #button__text {
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Mint Spirit;
     font-size: 23.56px;
     font-weight: 700;
@@ -64,7 +69,9 @@ body {
 /* HEADER */
 
 header {
-    margin-top: 39px
+    padding-top: 38px;
+    padding-bottom: 38px;
+    /* background-color: rgb(0, 0, 0, 0.3); */
 }
 
 .container {
@@ -77,7 +84,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Mint Spirit;
     font-size: 20px;
     font-weight: 700;
@@ -86,7 +93,7 @@ header {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Mint Spirit;
     font-size: 17.36px;
     font-weight: 400;
@@ -95,7 +102,7 @@ nav a {
 
     display: inline-block;
     text-decoration: none;
-    margin-right: 36px;
+    margin-right: 31px;
     transition: all .4s ease;
 }
 
@@ -111,7 +118,7 @@ nav a:last-of-type {
 /* MAIN */
 
 main {
-    margin-top: 158px;
+    padding-top: 158px;
 }
 
 .main-content {
@@ -121,7 +128,7 @@ main {
 }
 
 .main-content h1 {
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Ermilov;
     font-size: 48px;
     font-weight: 700;
@@ -146,7 +153,7 @@ main {
 .main-content__button a {
     padding: 21px 156px;
 
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Mint Spirit;
     font-size: 23.56px;
     font-weight: 700;
@@ -157,10 +164,11 @@ main {
     border: 1px solid rgb(40, 41, 54);
     border-radius: 27px;
     background: rgb(255, 255, 255);
-    
+
     position: relative;
     overflow: hidden;
-    display: inline-block; /* Важно для работы эффекта */
+    display: inline-block;
+    /* Важно для работы эффекта */
 }
 
 .main-content__button a::after {
@@ -170,7 +178,8 @@ main {
     left: -75px;
     width: 50px;
     height: 155px;
-    background:  rgb(40, 41, 54, 0.1); /* Чуть увеличил прозрачность, чтобы эффект был заметнее */
+    background: rgb(40, 41, 54, 0.1);
+    /* Чуть увеличил прозрачность, чтобы эффект был заметнее */
     transform: rotate(35deg);
     transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -184,6 +193,7 @@ main {
     width: 683px;
     height: 490px;
     margin-left: -28px;
+    margin-bottom: 61px;
 }
 
 .square {
@@ -193,11 +203,194 @@ main {
     top: 168px;
     background: conic-gradient(from 120deg at 50% 50%,
             #B1F9FF 0%,
-            #F3A5FF 60%,
+            #F3A5FF 40%,
+            #FFF7FF 60%,
             #FFF7FF 80%,
             #ADF9FF 100%);
     opacity: 0.7;
     z-index: -1;
     width: 600px;
     height: 600px;
+}
+
+/* SCAM */
+
+.scam {
+    /* background-color: rgb(0, 0, 0, 0.3); */
+}
+
+.scam-content {
+    padding-top: 30px;
+    display: flex;
+    text-align: center;
+}
+
+.scam-content div#block__title {
+    margin-bottom: 15px;
+}
+
+.scam-content div#block__desc {
+    margin-bottom: 25px;
+}
+
+/* button start */
+
+.toggle-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 57px;
+}
+
+.toggle-container {
+    width: 824px;
+    height: 76px;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.toggle-button {
+    width: 409px;
+    height: 70px;
+    background-color: #FBDFFF;
+    border-radius: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: absolute;
+    top: 3%;
+    left: 3px;
+}
+
+.toggle-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    color: #333;
+    z-index: 2;
+    user-select: none
+}
+
+.toggle-container.active .toggle-button {
+    transform: translateX(409px);
+    background-color: #c7fbff;
+}
+
+/* button end */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CARD 1 */
+
+.card1 {
+    width: 413px;
+    height: 550px;
+    border-radius: 30px;
+    background: #FBDFFF;
+}
+
+.card-title {
+    color: rgb(0, 0, 0);
+    font-family: Ermilov;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    margin-top: 38px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    width: 366px;
+    height: 162px;
+    text-align: center;
+    margin-left: 24px;
+}
+
+.card-image-background {
+    border-radius: 30px;
+    background: linear-gradient(180.00deg, white, rgba(255, 255, 255, 0) 100%);
+    width: 366px;
+    height: 269px;
+    margin-left: 24px;
+}
+
+.card-image-background img {
+    width: 328px;
+    height: 210px;
+    margin-top: 28px;
+}
+
+/* CARD 2 */
+
+.card2 {
+    width: 413px;
+    height: 550px;
+    border-radius: 30px;
+    background: #E1E0FF;
+}
+
+.card2 div.card-title {
+    width: 251px;
+    height: 103px;
+    margin-bottom: 7px;
+    margin-left: 81px;
+}
+
+.card2 div.card-description {
+    width: 356px;
+    height: 108px;
+    margin-left: 28px;
+}
+
+.card2 div.card-image-background {
+    width: 366px;
+    height: 254px;
+}
+
+.card2 div.card-image-background img {
+    margin-top: 19px;
+    width: 166px;
+    height: 235px;
+}
+
+/* CARD 3 */
+
+.card3 {
+    width: 413px;
+    height: 550px;
+    border-radius: 30px;
+    background: #DDFDFF;
+}
+
+.card3 div.card-title {
+    margin-bottom: 7px;
+}
+
+.card3 div.card-description {
+    width: 344px;
+    height: 135px;
+    margin-left: 35px;
+}
+
+.card3 div.card-image-background {
+    width: 366px;
+    height: 299px;
+}
+
+.card3 div.card-image-background img {
+    margin-top: 47px;
+    width: 310px;
+    height: 193px;
 }

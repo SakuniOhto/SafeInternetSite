@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Безопасный интернет</title>
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>Безопасный Интернет</title>
+    <script src="libs/jquery.js"></script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imgs/logo.png">
@@ -15,7 +15,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                Безопасный интернет
+                Безопасный Интернет
                 <nav>
                     <a href="#">Мошенничество</a>
                     <a href="#">Фейки</a>
@@ -45,4 +45,55 @@
             </div>
         </div>
     </main>
+
+    <!-- SCAM -->
+
+    <section class="scam">
+        <div class="container">
+            <div class="scam-content">
+                <div>
+                    <div id="block__title">Мошенничество</div>
+                    <div id="block__desc">Никогда не отправляйте интимные фото — даже людям, которым доверяете. Они
+                        могут быть украдены и использованы в мошеннических или компрометирующих целях, что впоследствии
+                        навредит вашей репутации, учебе и карьере. Никому не сообщайте пароли, пин-коды и коды из СМС!
+                        Мошенники могут представиться сотрудниками банка и убедить вас передать им код под предлогом
+                        защиты счета. На самом деле, так они получат доступ к вашим деньгам. Будьте бдительны! <a
+                            href="#" id="link__text">Подробнее...</a></div>
+                    <div class="toggle-wrap">
+                        <div class="toggle-container" onclick="toggleSwitch()" id="block__desc">
+                            <div class="toggle-button"></div>
+                            <div class="toggle-text">Схемы мошенничества</div>
+                            <div class="toggle-text">Как обезопасить себя</div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card1">
+                            <div class="card-title">Сайты-подделки</div>
+                            <div class="card-description" id="block__desc">Это могут быть копии страниц социальных сетей
+                                и Интернет‑магазинов. При покупке товара на сайте‑поделке ты не получишь ничего, а
+                                деньги отправятся напрямую в руки преступников.
+                            </div>
+                            <div class="card-image-background"><img src="images/website.png" alt="Website"></div>
+                        </div>
+                        <div class="card2">
+                            <div class="card-title">Звонки с поддельных номеров</div>
+                            <div class="card-description" id="block__desc">Мошенники могут представиться
+                                кем угодно – работником банка, полиции, госструктуры, врачом, даже
+                                твоим родственником.
+                            </div>
+                            <div class="card-image-background"><img src="images/phone.png" alt="Website"></div>
+                        </div>
+                        <div class="card3">
+                            <div class="card-title">Шантаж</div>
+                            <div class="card-description" id="block__desc">Мошенники используют украденные данные и фото
+                                для вымогательства, особенно интимные или компрометирующие, полученные взломом почты или
+                                соцсетей.
+                            </div>
+                            <div class="card-image-background"><img src="images/puppet.png" alt="Website"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
