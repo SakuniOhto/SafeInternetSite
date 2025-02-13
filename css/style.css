@@ -1,14 +1,17 @@
 /* FONTS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @font-face {
     font-family: Ermilov;
     src: '/fonts/Ermilov-bold.otf';
 }
+
 @font-face {
     font-family: Mint Spirit;
     src: '/fonts/MintSpirit-Bold.otf';
     font-weight: 700;
 }
+
 @font-face {
     font-family: Mint Spirit;
     src: '/fonts/MintSpirit-Regular.otf';
@@ -181,7 +184,6 @@ main {
     position: relative;
     overflow: hidden;
     display: inline-block;
-    /* Важно для работы эффекта */
 }
 
 .main-content__button a::after {
@@ -192,7 +194,6 @@ main {
     width: 50px;
     height: 155px;
     background: rgb(40, 41, 54, 0.1);
-    /* Чуть увеличил прозрачность, чтобы эффект был заметнее */
     transform: rotate(35deg);
     transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -230,6 +231,7 @@ main {
 
 .scam {
     /* background-color: rgb(0, 0, 0, 0.3); */
+    padding-bottom: 31px;
 }
 
 .scam-content {
@@ -260,7 +262,7 @@ main {
     height: 76px;
     border-radius: 40px;
     background-color: white;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid black;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -312,7 +314,7 @@ main {
 }
 
 .card-title {
-    color: rgb(0, 0, 0);
+    color: black;
     font-family: Ermilov;
     font-size: 38px;
     font-weight: 700;
@@ -321,7 +323,7 @@ main {
     text-align: center;
 
     margin-top: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .card-description {
@@ -357,7 +359,6 @@ main {
 .card2 div.card-title {
     width: 251px;
     height: 103px;
-    margin-bottom: 7px;
     margin-left: 81px;
 }
 
@@ -387,10 +388,6 @@ main {
     background: #DDFDFF;
 }
 
-.card3 div.card-title {
-    margin-bottom: 7px;
-}
-
 .card3 div.card-description {
     width: 344px;
     height: 135px;
@@ -406,4 +403,226 @@ main {
     margin-top: 47px;
     width: 310px;
     height: 193px;
+}
+
+/* CARD 4 */
+
+.card4 {
+    width: 413px;
+    height: 550px;
+    border-radius: 30px;
+    background: #FBDFFF;
+    display: none;
+}
+
+.card4 div.card-description {
+    width: 366px;
+    height: 162px;
+    margin-left: 24px;
+}
+
+.card4 div.card-image-background {
+    width: 366px;
+    height: 269px;
+}
+
+.card4 div.card-image-background img {
+    margin-top: 17px;
+    width: 221px;
+    height: 221px;
+}
+
+/* CARD 5 */
+
+.card5 {
+    width: 413px;
+    height: 550px;
+    border-radius: 30px;
+    background: #E1E0FF;
+    display: none;
+}
+
+.card5 div.card-title {
+    width: 251px;
+    height: 69px;
+    margin-left: 81px;
+}
+
+.card5 div.card-description {
+    width: 356px;
+    height: 135px;
+    margin-left: 29px;
+}
+
+.card5 div.card-image-background {
+    width: 366px;
+    height: 269px;
+}
+
+.card5 div.card-image-background img {
+    margin-top: 32px;
+    width: 329px;
+    height: 214px;
+}
+
+/* CARD 6 */
+
+.card6 {
+    width: 413px;
+    height: 550px;
+    border-radius: 30px;
+    background: #DDFDFF;
+    display: none;
+}
+
+.card6 div.card-description {
+    width: 344px;
+    height: 162px;
+    margin-left: 35px;
+}
+
+.card6 div.card-image-background {
+    width: 366px;
+    height: 269px;
+}
+
+.card6 div.card-image-background img {
+    margin-top: 15px;
+    width: 333px;
+    height: 223px;
+}
+
+/* FAKES */
+
+.fakes {
+    padding-top: 77px;
+    padding-bottom: 122px;
+    background-color: #FBDFFF;
+}
+
+.fakes-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fakes-content p#block__title {
+    margin-bottom: 36px;
+}
+
+.fakes-content p#block__desc {
+    margin-bottom: 43px;
+    width: 639px;
+    height: 405px;
+}
+
+.fakes-content__button a {
+    padding: 25px 100px;
+
+    color: black;
+    font-family: Mint Spirit;
+    font-size: 23.56px;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration: none;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(40, 41, 54);
+    border-radius: 27px;
+    background: rgb(255, 255, 255);
+
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.fakes-content__button a::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -75px;
+    width: 50px;
+    height: 155px;
+    background: rgb(40, 41, 54, 0.1);
+    transform: rotate(35deg);
+    transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.fakes-content__button a:hover::after {
+    left: 120%;
+}
+
+.fakes-content img {
+    width: 596px;
+    height: 563px;
+}
+
+/* RULES */
+
+.rules {
+    padding-top: 60px;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.rules-content div#block__title {
+    margin-bottom: 21px;
+    text-align: center;
+}
+
+.rules-content div#block__desc {
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.item {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 27px;
+    background: rgb(255, 255, 255);
+    width: 410px;
+    height: 385px;
+    position: absolute;
+    left: 30%;
+}
+
+.item h1 {
+    color: black;
+    font-family: Ermilov;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: black;
+    font-family: Manrope;
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+#next, #prev {
+    position: absolute;
+    color: gray;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+}
+
+#next {
+    left: unset;
+    right: 50px;
+}
+
+.slider {
+    position: relative;
 }
