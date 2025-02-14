@@ -12,3 +12,16 @@ function toggleSwitch() {
         $('#card4, #card5, #card6').css('display', 'none')
     }
 }
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 50) {
+        $(".header").css({
+            "-webkit-box-shadow": "0 5px 25px rgba(0, 0, 0, 0.15)",
+            "box-shadow": "0 5px 25px rgba(0, 0, 0, 0.15)",
+        });
+    } else {
+        $(".header").css({
+            "-webkit-box-shadow": "none",
+            "box-shadow": "none",
+        });
+    }
+});
