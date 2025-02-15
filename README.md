@@ -25,7 +25,7 @@
 
 ## Demo
 
-![DEMO](https://imgur.com/a/AyDrE5d.png)
+![DEMO](https://i.imgur.com/tHr9Z0u.png)
 
 
 ## License
