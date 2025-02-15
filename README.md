@@ -21,3 +21,14 @@
 Ссылка: https://sakuniohto.github.io/SafeInternetSite/
 
 ### ! Сайт "Безопасный Интернет" не имеет никакого отношения к Лиге безопасного интернета и не претендует на материал, защищённый авторскими правами !
+
+
+## Demo
+
+![DEMO](https://imgur.com/a/AyDrE5d.png)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
