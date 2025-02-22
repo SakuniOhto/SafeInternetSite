@@ -3,18 +3,18 @@
 
 @font-face {
     font-family: Ermilov;
-    src: '/fonts/Ermilov-bold.otf';
+    src: url('../fonts/Ermilov-bold.otf');
 }
 
 @font-face {
     font-family: Mint Spirit;
-    src: '/fonts/MintSpirit-Bold.otf';
+    src: url('../fonts/MintSpirit-Bold.otf');
     font-weight: 700;
 }
 
 @font-face {
     font-family: Mint Spirit;
-    src: '/fonts/MintSpirit-Regular.otf';
+    src: url('../fonts/MintSpirit-Regular.otf');
     font-weight: 400;
 }
 
