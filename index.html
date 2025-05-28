@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасный Интернет</title>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/swiperjs.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollSmoother.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
+    <script src="libs/scrollTo.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/swiperjs.css">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    Безопасный Интернет
+                    <nav>
+                        <a href="#">Мошенничество</a>
+                        <a href="#">Фейки</a>
+                        <a href="#">Общение с незнакомцами</a>
+                        <a href="#">Анонимность</a>
+                        <a href="#">Цифровой след</a>
+                        <a href="#">Азартные игры</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main-content">
+                    <div data-speed="1.1">
+                        <h1>Безопасный Интернет -</h1>
+                        <p id="block__desc">Это цифровая среда, в которой пользователи защищены от киберугроз,
+                            мошенничества
+                            и утечки данных. Это означает осознанное и ответственное поведение в сети, использование
+                            надежных паролей, внимание к конфиденциальности личной информации и осторожность при
+                            взаимодействии с незнакомыми сайтами и сообщениями.<br><b>Участник конкурса «КРИТ-2025»
+                                приветствует жюри конкурса!</b></p>
+                        <div class="main-content__button"><a href="#"><span>Начать изучение</span></a></div>
+                    </div>
+                    <div>
+                        <div data-speed="1.1" class="square"></div>
+                        <img data-speed="1.1" src="./images/laptop.png" alt="Laptop">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- SCAM -->
+        <section class="scam">
+            <div class="container">
+                <div class="scam-content">
+                    <div data-speed=".95">
+                        <div id="block__title">Мошенничество</div>
+                        <div id="block__desc">Никогда не отправляйте интимные фото — даже людям, которым доверяете. Они
+                            могут быть украдены и использованы в мошеннических или компрометирующих целях, что
+                            впоследствии
+                            навредит вашей репутации, учебе и карьере. Никому не сообщайте пароли, пин-коды и коды из
+                            СМС!
+                            Мошенники могут представиться сотрудниками банка и убедить вас передать им код под предлогом
+                            защиты счета. На самом деле, так они получат доступ к вашим деньгам. Будьте бдительны! <a
+                                href="https://ligainternet.ru/wp-content/uploads/2022/09/detyam-moshennichestvo-v-internete-web.pdf"
+                                id="link__text">Подробнее...</a></div>
+                        <div class="toggle-wrap">
+                            <div class="toggle-container" onclick="toggleSwitch()" id="block__desc">
+                                <div class="toggle-button"></div>
+                                <div class="toggle-text">Схемы мошенничества</div>
+                                <div class="toggle-text">Как обезопасить себя</div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card1" id="card1">
+                                <div class="card-title">Сайты-подделки</div>
+                                <div class="card-description" id="block__desc">Это могут быть копии страниц социальных
+                                    сетей
+                                    и Интернет‑магазинов. При покупке товара на сайте‑поделке ты не получишь ничего, а
+                                    деньги отправятся напрямую в руки преступников.
+                                </div>
+                                <div class="card-image-background"><img src="images/website.png" alt="Website"></div>
+                            </div>
+                            <div class="card2" id="card2">
+                                <div class="card-title">Звонки с поддельных номеров</div>
+                                <div class="card-description" id="block__desc">Мошенники могут представиться
+                                    кем угодно – работником банка, полиции, госструктуры, врачом, даже
+                                    твоим родственником.
+                                </div>
+                                <div class="card-image-background"><img src="images/phone.png" alt="Phone"></div>
+                            </div>
+                            <div class="card3" id="card3">
+                                <div class="card-title">Шантаж</div>
+                                <div class="card-description" id="block__desc">Мошенники используют украденные данные и
+                                    фото
+                                    для вымогательства, особенно интимные или компрометирующие, полученные взломом почты
+                                    или
+                                    соцсетей.
+                                </div>
+                                <div class="card-image-background"><img src="images/puppet.png" alt="Puppet"></div>
+                            </div>
+                            <div class="card4" id="card4">
+                                <div class="card-title">Аутентификация</div>
+                                <div class="card-description" id="block__desc">Настрой в мессенджерах и соцсетях
+                                    двухфакторную (двухэтапную) аутентификацию. При попытке входа в свой профиль тебе на
+                                    почту или в сообщения будет приходить код подтверждения.
+                                </div>
+                                <div class="card-image-background"><img src="images/auth.png" alt="Auth"></div>
+                            </div>
+                            <div class="card5" id="card5">
+                                <div class="card-title">Проверяй адрес сайта</div>
+                                <div class="card-description" id="block__desc">Мошенники рассчитывают на
+                                    невнимательность пользователей и часто делают сайт похожий на
+                                    оригинал. В адресе сайта может отличаться одна буква или символ.
+                                </div>
+                                <div class="card-image-background"><img src="images/websitelink.png" alt="Website Link">
+                                </div>
+                            </div>
+                            <div class="card6" id="card6">
+                                <div class="card-title">Письма</div>
+                                <div class="card-description" id="block__desc">Не открывай файлы из писем или сообщений,
+                                    которые прислали незнакомые люди. Это может привести к заражению вашего устройства
+                                    вредоносным программным обеспечением.
+                                </div>
+                                <div class="card-image-background"><img src="images/letters.png" alt="Letters"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAKES -->
+
+        <section class="fakes">
+            <div class="container">
+                <div class="fakes-content">
+                    <div>
+                        <p id="block__title">Фейки</p>
+                        <p id="block__desc">В Интернете есть много интересного, веселого и познавательного контента. Но
+                            существуют фейки – целенаправленно распространяемая ложная информация, которую специально
+                            создают, чтобы запутать, ввести в заблуждение или посеять панику среди людей<br>
+                            Оригинальный источник – самый надежный гарант достоверной информации. Если новость поступает
+                            от
+                            «желтых СМИ» или сайтов
+                            с громкими заголовками, стоит насторожиться. Реальная новость сопровождается множеством
+                            свидетельств и мнений, а фейковые, как правило, мало отличаются друг от друга и копируются с
+                            одного источника. Авторитетные СМИ, заботясь о своей репутации, тщательно проверяют факты, в
+                            то
+                            время как мелкие издания могут публиковать ложные сведения. Всегда проверяйте факты и
+                            цитаты,
+                            обращая внимание на основную суть новости, а не на лишние детали, создающие иллюзию
+                            достоверности.</p>
+                        <div class="fakes-content__button"><a
+                                href="https://ligainternet.ru/wp-content/uploads/2022/09/rasskazyvaem-o-fejkah-web.pdf">Узнать
+                                подробнее</a></div>
+                    </div>
+                    <div><img src="images/newspaper.png" alt="Newspaper"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RULES -->
+
+        <section class="rules">
+            <div class="container">
+                <div class="rules-content">
+                    <div>
+                        <div id="block__title">Главные правила общения с незнакомцами</div>
+                        <div id="block__desc">Интернет – это возможность общаться с друзьями на расстоянии, не терять
+                            связь
+                            на летних каникулах и обсуждать интересные темы. Но также в Интернете есть много незнакомых
+                            пользователей, которые не просто так хотят добавить тебя в друзья и начать общение.
+                            Незнакомцы в
+                            Интернете могут оказаться не теми, за кого себя выдают. Среди них могут оказаться мошенники
+                            или
+                            иные преступники, у которых дети вызывают особый интерес, и чтобы добиться возможности стать
+                            твоим другом, они могут соврать про свой возраст
+                            (представиться твоим ровесником) и поставить на аватарку чужую фотографию. Если человек,
+                            который
+                            предлагает тебе дружбу в Интернете, активно интересуется информацией о тебе или твоей семье,
+                            если он ведет себя агрессивно и грубо, если он предлагает неприятные или неприличные темы
+                            для
+                            общения, то лучше не добавлять его в друзья, а если добавил, то не стесняться заблокировать.
+                            То
+                            же самое следует сделать, если ты сомневаешься, правду ли про себя рассказывает новый
+                            знакомый
+                            из Интернета. Ведь под аккаунтом твоего сверстника может скрываться самый настоящий
+                            преступник.
+                            Самым безопасным вариантом будет никогда не добавлять в друзья человека, с которым вы не
+                            встречались в реальной жизни. <a
+                                href="https://ligainternet.ru/wp-content/uploads/2022/09/pravila-obshheniya-s-neznakomtsami-web.pdf"
+                                id="link__text">Подробнее...</a></div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h1>Страницы в социальных сетях лучше закрыть от посторонних</h1>
+                                    <p>Если ты не знаешь, как это сделать, то<br>попроси родителей тебе помочь.
+                                        Это<br>защитит твои личные данные от попадания<br>в руки преступников. Как
+                                        правило,<br>информацию о себе, своих увлечениях,<br>хобби, фото с друзьями и
+                                        многое
+                                        другое мы<br>публикуем в соцсетях. Очень часто<br> информацию о нас
+                                        злоумышленники
+                                        берут<br>в открытом доступе.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1>Будь осторожен, когда<br>добавляешь незнакомого человека в друзья,<br>
+                                        особенно того, кого ты не<br>знаешь в реальной жизни</h1>
+                                    <p>Если же новый знакомый задает тебе много<br>вопросов о семье или о том, где ты
+                                        живешь<br>и учишься, то никогда не рассказывай ему<br>эту информацию. Сразу же
+                                        сообщай о<br>подозрительном незнакомце своим<br>родителям.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1>Будь внимателен, если в<br>переписке тебя<br>призывают к действию<br>
+                                        и пытаются подловить</h1>
+                                    <p>Об этом свидетельствуют такие фразы, как:<br>«А ты сможешь или тебе слабо?» «Все
+                                        мои<br> знакомые уже это делали, в этом нет<br>ничего такого» и аналогичные.
+                                        Такие
+                                        фразы<br>должны тебя насторожить. Рекомендуем<br>сразу блокировать подобные
+                                        аккаунты.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1>Не соглашайся на<br>встречу с людьми из<br>Интернета</h1>
+                                    <p>Под профилем твоего ровесника могут<br>сидеть далеко не девочки и мальчики,
+                                        а<br>самые настоящие преступники. Всегда<br>сообщай своим родителям о своих
+                                        друзьях<br>из Интернета, а также о том, куда ты<br>направляешься, с кем
+                                        собираешься<br>встретиться во избежание опасности.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h1>Если незнакомец в<br>Интернете вызывает у<br>тебя негативные
+                                        эмоции,<br>описанные
+                                        ранее,<br>расскажи об этом<br>родителям или<br>доверенным взрослым</h1>
+                                    <p>Не стесняйся признаться в этом. Такие<br>эмоции может испытывать любой
+                                        человек,<br>но
+                                        только взрослый в состоянии помочь<br>избавиться от них и защитить тебя от
+                                        их<br>воздействия.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            var swiper = new Swiper(".mySwiper", {
+                                effect: "coverflow",
+                                grabCursor: true,
+                                centeredSlides: true,
+                                slidesPerView: "auto",
+                                initialSlide: 2,
+                                coverflowEffect: {
+                                    rotate: 0,
+                                    stretch: 0,
+                                    depth: 300,
+                                    modifier: 1,
+                                    slideShadows: false,
+                                },
+                                pagination: {
+                                    el: ".swiper-pagination"
+                                }
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANON -->
+
+        <section class="anon">
+            <div class="container">
+                <div class="anon-content">
+                    <div><img src="images/union.png" alt="Union"></div>
+                    <div>
+                        <p id="block__title">Анонимность</p>
+                        <p id="block__desc">Быть анонимным в сети невозможно, и об этом важно помнить. Всё, что однажды
+                            попало в Интернет, остается там навсегда. Даже если пользователь пытался скрыть о себе всю
+                            информацию, его всё равно можно найти. Особенно это касается преступников, которые хотят
+                            сохранить в тайне свои действия. Они создают фейковые профили в социальных сетях и
+                            используют
+                            специальные программы-анонимайзеры, но это не делает их невидимыми.
+                            Каждое действие в Интернете оставляет след, содержащий информацию об устройстве, с которого
+                            оно
+                            совершено, будь то телефон или компьютер. Интернет-провайдер фиксирует всю активность
+                            пользователя, и эта информация может стать доступной кому угодно — от сотрудников
+                            правоохранительных органов до злоумышленников.<br>
+                            Интернет — это публичное пространство, подобное улице, парку или школе, где действуют
+                            правила
+                            вежливого общения. Следует относиться к другим людям с уважением и вести себя так, как
+                            хотелось
+                            бы, чтобы вели себя с тобой. Клевета и оскорбления в сети являются правонарушениями, за
+                            которые
+                            предусмотрена ответственность. Важно проявлять понимание и сострадание к окружающим, ведь за
+                            каждым профилем стоит реальный человек.</p>
+                        <div class="anon-content__button"><a
+                                href="https://ligainternet.ru/wp-content/uploads/2022/09/anonimnost-v-seti-web.pdf">Узнать
+                                подробнее</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAIL -->
+
+        <section class="trail">
+            <div class="container">
+                <div class="trail-content">
+                    <div>
+                        <div id="block__title">Цифровой след</div>
+                        <div class="first-block" data-lag=".1">
+                            <h1>Соцсети собирают информацию буквально о каждой вашей<br>активности</h1>
+                            <p>Под какими постами ты ставишь лайки, сколько времени ты читаешь новость, какие заголовки
+                                тебе
+                                <br>нравятся больше, с какими людьми ты дружишь и общаешься, какую музыку ты слушаешь,
+                                какие видео тебе<br>нравятся. У соцсетей есть информация даже о том, что ты пишешь и
+                                какие
+                                фото отправляешь друзьям.
+                            </p>
+                        </div>
+                        <div class="second-level">
+                            <div class="second-block" data-lag=".1">
+                                <h1>Соцсети, поисковые сайты,<br>Интернет-магазины и прочие крупные<br>Интернет-ресурсы
+                                    собирают данные</h1>
+                                <p>для того, чтобы потом показывать своим пользователям<br>рекламу. Чем точнее реклама
+                                    попадает в интересы и<br>увлечения каждого конкретного пользователя, тем
+                                    она<br>качественнее и дороже.
+                                </p>
+                            </div>
+                            <div class="third-block" data-lag=".1">
+                                <h1>За этими данными<br>охотятся<br>злоумышленники</h1>
+                                <p>Они могут использовать их для того,<br>чтобы как можно больше узнать о<br>жертве,
+                                    выяснить, где
+                                    человек<br> работает, в каком банке у него открыт<br>счет, как его зовут и так
+                                    далее.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="block__desc">Вся эта информация называется цифровым следом, который каждый из
+                            нас<br>оставляет в сети. Невозможно пользоваться Интернетом и не оставлять след.
+                            Даже<br>если ты
+                            решишь ничего не публиковать, ничего никому не писать, в любом случае<br>прочитанные и
+                            просмотренные посты будут формировать длинную историю твоей<br>активности. Этот след
+                            уникален
+                            для каждого человека, двух одинаковых быть не<br>может. О каждом из нас в Интернете
+                            настолько
+                            много информации, что можно<br> создать настоящего цифрового двойника. <a
+                                href="https://ligainternet.ru/wp-content/uploads/2022/09/tsifrovoj-sled-web.pdf"
+                                id="link__text">Подробнее...</a>
+                        </div>
+                        <div class="info__cloud">
+                            <img src="images/info.svg" alt="Info">
+                            <p>Все, что однажды попало в Интернет, остается<br>там навсегда и удалить это невозможно.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GAMES -->
+
+        <section class="games">
+            <div class="container">
+                <div class="games-content">
+                    <div class="first-block">
+                        <img src="images/roulette.png" alt="Roulette" id="roulette">
+                        <p id="block__title">Азартные игры</p>
+                        <img src="images/cardstable.png" alt="Cards Table" id="cardstable">
+                    </div>
+                    <div class="second-level">
+                        <div class="second-block">
+                            <p>Одна из серьёзных угроз для детей и взрослых в<br>Интернет – это онлайн азартные
+                                игры.<br>Зависимость от азартных игр называется<br>лудоманией и является настоящей
+                                болезнью.<br>Побороть её бывает очень сложно, на это нужно<br>много времени и помощь
+                                специалистов.</p>
+                            <div class="games-content__button"><a
+                                    href="https://ligainternet.ru/wp-content/uploads/2023/09/azartnye-igry-pamyatka.pdf">Узнать
+                                    подробнее</a></div>
+                        </div>
+                        <div class="third-block">
+                            <p>Азартные игры опасны, так как вызывают зависимость –<br>человек теряет контроль,
+                                продолжает
+                                играть и тратить<br>деньги, несмотря на убытки. Это приводит к проблемам в<br>семье, на
+                                работе, в
+                                учёбе и ухудшает отношения с близкими.<br>Казино и игровые сайты специально настроены
+                                так,
+                                чтобы<br>игроки проигрывали, оставляя всё больше денег. Помимо<br>финансовых потерь,
+                                люди
+                                испытывают сильные негативные<br>эмоции – злость, разочарование, стресс, которые
+                                мешают<br>
+                                нормально спать, есть и могут подорвать здоровье. В тяжелых<br>случаях зависимость от
+                                азартных
+                                игр приводит к депрессии и<br>другим серьёзным психологическим проблемам.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <a href="https://github.com/SakuniOhto"><img src="images/github.svg" alt="Github"></a>
+                    <p>Безопасный Интернет</p>
+                    <a href="https://t.me/SakuniOhto"><img src="images/telegram.svg" alt="Telegram"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin)
+
+        ScrollSmoother.create({
+            smooth: 0.9,
+            effects: true
+        })
+
+        gsap.fromTo('.main', { opacity: 1 }, {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.main',
+                start: 'center',
+                end: 'bottom',
+                scrub: true
+            }
+        })
+        gsap.fromTo('.scam', { opacity: 1 }, {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: '.scam',
+                start: 'center',
+                end: 'bottom',
+                scrub: true
+            }
+        })
+        gsap.fromTo('.fakes-content img', { opacity: 0, x: 50 }, {
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+                trigger: '.fakes-content p#block__title',
+                scrub: true
+            }
+        })
+        gsap.fromTo('.swiper', { opacity: 0, y: 100 }, {
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+                trigger: '.rules-content div#block__desc',
+                scrub: true
+            }
+        })
+        gsap.fromTo('.anon img', { opacity: 0, x: -50 }, {
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+                trigger: '.anon p#block__title',
+                scrub: true
+            }
+        })
+        gsap.fromTo('.info__cloud', { opacity: 0.7, y: 40 }, {
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+                trigger: '.trail-content #block__desc',
+                scrub: true
+            }
+        })
+        gsap.fromTo('.games img#roulette', { opacity: 0, x: -50 }, {
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+                trigger: '.info__cloud',
+                scrub: true
+            }
+        })
+        gsap.fromTo('.games img#cardstable', { opacity: 0, x: 50 }, {
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+                trigger: '.info__cloud',
+                scrub: true
+            }
+        })
+
+
+        $('a').click(function () {
+            switch ($(this).text()) {
+                case "Мошенничество":
+                    gsap.to(window, { duration: 1.8, scrollTo: 800 });
+                    break;
+                case "Начать изучение":
+                    gsap.to(window, { duration: 1.8, scrollTo: 800 });
+                    break;
+                case "Фейки":
+                    gsap.to(window, { duration: 1.8, scrollTo: 1700 });
+                    break;
+                case "Общение с незнакомцами":
+                    gsap.to(window, { duration: 1.8, scrollTo: 2550 });
+                    break;
+                case "Анонимность":
+                    gsap.to(window, { duration: 1.8, scrollTo: 3400 });
+                    break;
+                case "Цифровой след":
+                    gsap.to(window, { duration: 1.8, scrollTo: 4200 });
+                    break;
+                case "Азартные игры":
+                    gsap.to(window, { duration: 1.8, scrollTo: 5350 });
+                    break;
+            }
+        })
+
+        const showAnim = gsap.from(".header", {
+            yPercent: -100,
+            paused: true,
+            duration: 0.3
+        }).progress(1);
+
+        ScrollTrigger.create({
+            start: "top top",
+            end: 99999,
+            // markers: true,
+            delay: 1,
+            onUpdate: (self) => {
+                self.direction === -1 ? showAnim.play() : showAnim.reverse();
+            }
+        });
+        ScrollTrigger.create({
+            trigger: '.header',
+            start: 'top top',
+            endTrigger: 'footer',
+            end: 'bottom+=100vh bottom',
+            pin: true,
+            pinType: "fixed",
+            // markers: true,
+            pinReparent: true,
+            pinSpacing: false
+        });
+
+
+    </script>
+</body>
