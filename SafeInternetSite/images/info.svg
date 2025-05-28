@@ -1,0 +1,18 @@
+<svg width="75.449768" height="75.113770" viewBox="0 0 75.4498 75.1138" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip39_58">
+			<rect id="Tips" width="75.449768" height="75.113754" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip39_58)">
+		<path id="path" d="M69.16 12.51L6.28 12.51L6.28 59.46L29.86 59.46L37.72 67.28L45.58 59.46L69.16 59.46L69.16 12.51Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M6.28 12.51L6.28 59.46L29.86 59.46L37.72 67.28L45.58 59.46L69.16 59.46L69.16 12.51L6.28 12.51Z" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="4.687500" stroke-linejoin="round"/>
+		<path id="path" d="M35.4 36.01L35.38 35.99C35.38 34.67 36.41 33.64 37.72 33.64C39.03 33.64 40.06 34.67 40.06 35.99L40.04 36.01L35.4 36.01ZM40.04 50.05L40.06 50.07C40.06 51.38 39.03 52.41 37.72 52.41C36.41 52.41 35.38 51.38 35.38 50.07L35.4 50.05L40.04 50.05Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M37.72 35.99L37.72 50.07" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="4.687500" stroke-linecap="round"/>
+		<path id="path" d="M35.4 25.05L35.38 25.03C35.38 23.72 36.41 22.69 37.72 22.69C39.03 22.69 40.06 23.72 40.06 25.03L40.04 25.05L35.4 25.05ZM40.04 26.58L40.06 26.6C40.06 27.91 39.03 28.94 37.72 28.94C36.41 28.94 35.38 27.91 35.38 26.6L35.4 26.58L40.04 26.58Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M37.72 25.03L37.72 26.6" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="4.687500" stroke-linecap="round"/>
+	</g>
+</svg>
